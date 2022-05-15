@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /images/
+Crawl-delay: 10
+Disallow: /icons/manifest/
+Crawl-delay: 10
+Disallow: /icons/maskable/
+Sitemap: /sitemap.xml
