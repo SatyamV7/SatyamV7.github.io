@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>SatyamV7</title>
-    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/manifest/icon-512.png">
-    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="apple-touch-icon" sizes="144x144" href="../icons/manifest/icon-512.png">
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" alt="">
     <meta name="theme-color" content="#FFFFFF">
-    <meta name="google-site-verification" content="luIn9RTzM-cYXUWiXLev30mFX6FmvAdiowmlIpcm_RY" />
     <meta name="description"
         content="This Webste in Created By Satyam Verma. You can See The Source Code on Github. I also Use this Website as my Homepage. I made it With HTML, CSS & JavaScript">
     <style>
@@ -126,57 +124,17 @@
             background: linear-gradient(#e91e63, #e91e63);
         }
 
+        .offline h1 {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            width: 100%;
+        }
+
         .navbar .buttons input:hover {
             transform: scale(0.97);
-        }
-
-        header .text-content {
-            width: 40%;
-            margin: 100px 0 0 50px;
-        }
-
-        .text-content h2 {
-            font-size: 27px;
-            font-weight: 600;
-        }
-
-        .text-content p {
-            font-size: 30px;
-            margin-top: 350px;
-        }
-
-        @media (max-width:850px) {
-            header .navbar {
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 15px 5px;
-            }
-
-            .navbar .menu {
-                margin: 10px 0 20px 0;
-            }
-
-            header .text-content {
-                margin: 30px 0 0 20px;
-                width: 70%;
-            }
-
-            header .text-content h2 {
-                font-size: 20px;
-            }
-        }
-
-        @media (max-width:410px) {
-            header {
-                height: 100vh;
-                width: 100%;
-                border-radius: 0px;
-            }
-
-            header .navbar {
-                padding: 15px 10px;
-            }
         }
     </style>
 </head>
@@ -184,35 +142,30 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo"><a href="/"><img src="./icons/favicon.ico" width="50" height="50" alt="logo"></a>
+            <div class="logo"><a href="/"><img src="../icons/favicon.ico" width="50" alt="" height="50" alt=""
+                        alt="logo"></a>
             </div>
             <ul class="menu">
                 <li><a href="/">Home</a></li>
                 &nbsp;&nbsp;&nbsp;
                 <li><a href="https://github.com/SatyamV7?tab=repositories" target="_blank">Projects</a></li>
                 &nbsp;&nbsp;&nbsp;
-                <li><a href="./About_Me/">About</a></li>
+                <li><a href="../About_Me/">About</a></li>
             </ul>
             <div class="buttons">
-                <input type="button" value="Login" onclick="window.location.href = './Sign_in/';">
+                <input type="button" value="Login" onclick="window.location.href = '../Sign_in/';">
             </div>
         </nav>
-        <div class="text-content">
-            <p>
-            <h1>Hi, I'm Satyam</h1>
-            <font size="4">
-                I am a full stack web developer, I work in frontend web development with
-                JavaScript, TypeScript, and for frontend frameworks like Svelte, Vue, Angular and
-                React. I also write backend APIs & scripts, work with databases, and my
-                favourite platform is NodeJS.
-            </font>
-            </p>
+        <div class="offline">
+            <h1>
+                You are currently offline!
+            </h1>
         </div>
     </header>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
-                navigator.serviceWorker.register('/serviceworker.js').then(function (registration) {
+                navigator.serviceWorker.register('../serviceworker.js').then(function (registration) {
                     // Registration was successful
                     console.log('ServiceWorker registration successful with scope: ', registration.scope);
                 }, function (err) {

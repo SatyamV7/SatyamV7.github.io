@@ -1,7 +1,3 @@
 User-agent: *
-Disallow: /images/
 Crawl-delay: 10
-Disallow: /icons/manifest/
-Crawl-delay: 10
-Disallow: /icons/maskable/
-Sitemap: /sitemap.xml
+Sitemap: http://127.0.0.1/sitemap.xml

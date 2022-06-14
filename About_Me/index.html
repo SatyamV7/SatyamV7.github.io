@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <title>SatyamV7 - About Me</title>
     <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="../manifest.json">
+    <link rel="manifest" href="../manifest.webmanifest">
     <link rel="apple-touch-icon" sizes="144x144" href="../icons/manifest/icon-512.png">
-    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" alt="">
     <meta name="theme-color" content="#FFFFFF">
     <meta name="description"
         content="This Webste in Created By Satyam Verma. You can See The Source Code on Github. I also Use this Website as my Homepage. I made it With HTML, CSS & JavaScript">
@@ -129,8 +129,8 @@
         }
 
         header .text-content {
-            width: 96%;
-            margin: 200px 0 0 50px;
+            width: 100%;
+            margin-top: 150px;
         }
 
         .social {
@@ -138,6 +138,12 @@
             align-items: center;
             justify-content: center;
             gap: 25px;
+        }
+        .languages-and-tools{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
 
         @media (max-width:850px) {
@@ -155,10 +161,6 @@
             header .text-content {
                 margin: 30px 0 0 20px;
                 width: 70%;
-            }
-
-            header .text-content h2 {
-                font-size: 20px;
             }
         }
 
@@ -179,7 +181,8 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo"><a href="/"><img src="../icons/favicon.ico" width="50" height="50" alt="logo"></a>
+            <div class="logo"><a href="/"><img src="../icons/favicon.ico" width="50" alt="" height="50" alt=""
+                        alt="logo"></a>
             </div>
             <ul class="menu">
                 <li><a href="/">Home</a></li>
@@ -189,39 +192,51 @@
                 <li><a href=".">About</a></li>
             </ul>
             <div class="buttons">
-                <input type="button" value="Login" onclick="window.location.href = '../Sign_in';">
+                <input type="button" value="Login" onclick="window.location.href = '../Sign_in/';">
             </div>
         </nav>
         <div class="text-content" align="center">
-
             <h1 align="center">About Me</h1>
-            <p>
-            <h2>Hi, I'm Satyam
-                I am a full stack web developer, I work in frontend web development with
-                JavaScript, TypeScript, and for frontend frameworks like Svelte, Vue and
-                React. I also write backend APIs, scripts, working with databases, and my
-                favourite platforms are NodeJS, and Go.
-                I am a 20 y/o self-taught fullstack web developer based in India with 6 years of experience. I make
-                blazing fast and performant web apps like his Website.</h2>
+            <h2>
+                Hi, I'm Satyam. I am a 20 y/o self-taught fullstack web developer based in India with 6 years of
+                experience. I make blazing fast
+                and performant web apps, I work in frontend web development with
+                JavaScript, TypeScript, and for frontend frameworks like Svelte, Vue, Angular and React. I also write
+                backend APIs & scripts, work with databases, and my favourite platform is NodeJS.
+            </h2>
+            <h1>
+                <strong>Languages and Tools</strong>
+            </h1>
+            <p class="languages-and-tools">
+                <img height="20" title="HTML" alt="HTML" src="./Languages_and_Tools/html.png">
+                <img height="20" title="CSS" alt="CSS" src="./Languages_and_Tools/css.png">
+                <img height="20" title="JavaScript" alt="JavaScript" src="./Languages_and_Tools/javascript.png">
+                <img height="20" title="PHP" alt="PHP" src="./Languages_and_Tools/php.png">
+                <img height="20" title="Vue" alt="Vue" src="./Languages_and_Tools/vue.png">
+                <img height="20" title="React" alt="React" src="./Languages_and_Tools/react.png">
+                <img height="20" title="NodeJS" alt="NodeJS" src="./Languages_and_Tools/nodejs.png">
+                <img height="20" title="Svelte" alt="Svelte" src="./Languages_and_Tools/svelte.png">
+                <img height="20" title="Angular" alt="Angular" src="./Languages_and_Tools/angular.png">
+                <img height="20" title="TypeScript" alt="TypeScript" src="./Languages_and_Tools/typescript.png">
+                <img height="20" title="Python" alt="Python" src="./Languages_and_Tools/python.png">
+            </p>
+            <h1>📈 My GitHub Stats</h1>
+            <p align="center">
+                <img width="450px" alt="GitHub Stats"
+                    src="https://github-readme-stats.vercel.app/api?username=SatyamV7&show_icons=true&theme=gotham">
+            </p>
+            <p align="center">
+                <img alt="Top Languages"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=SatyamV7&layout=compact&langs_count=7&theme=gotham">
+            </p>
 
-            <div align="center">
-                <h1 align="center">My GitHub Stats</h1>
-                <img height="180em"
-                    src="https://github-readme-stats.vercel.app/api?username=SatyamV7&count_private=true&show_icons=true&theme=radical"
-                    alt="Github Stats" />
-                <h1 align="center">Wich Languages I Use?</h1>
-                <p>
-                    <img height="180em" alt="Languages Used"
-                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=SatyamV7&layout=compact&langs_count=7&theme=radical" />
-                </p>
-                <h1 align="center">My Contact</h1>
-                <div class="social" align="center">
-                    <a href="tel:+7205452952"><img src="./phone.svg" alt="Phone Icon" title="My Phone Number"></a>
-                    <a href="mailto:satyamverma8772020@gmail.com"><img src="./mail.svg" alt="Email Icon"
-                            title="My Email"></a>
-                    <a href="https://github.com/SatyamV7"><img src="./github.svg" alt="GitHub Icon"
-                            title="My GitHub Account"></a>
-                </div>
+            <h1 align="center">My Contact</h1>
+            <div class="social" align="center">
+                <a href="tel:+7205452952"><img src="./Social/phone.svg" alt="Phone Icon" title="My Phone Number"></a>
+                <a href="mailto:satyamverma8772020@gmail.com"><img src="./Social/mail.svg" alt="Email Icon"
+                        title="My Email"></a>
+                <a href="https://github.com/SatyamV7"><img src="./Social/github.svg" alt="GitHub Icon"
+                        title="My GitHub Account"></a>
             </div>
             </p>
         </div>
