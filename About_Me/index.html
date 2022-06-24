@@ -15,6 +15,26 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f0f0f0;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(185, 185, 185);
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(175, 175, 175);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -147,6 +167,13 @@
             gap: 10px;
         }
 
+        .about,
+        .languages-and-tools,
+        .stats,
+        .social {
+            margin-bottom: 13px;
+        }
+
         @media (max-width:850px) {
             header .navbar {
                 flex-direction: column;
@@ -197,16 +224,19 @@
             </div>
         </nav>
         <div class="text-content" align="center">
-            <h1>About Me</h1>
-            <h2>
-                Hi, I'm Satyam. I am a 20 y/o self-taught fullstack web developer based in India with 6 years of
-                experience. I make blazing fast
-                and performant web apps, I work in frontend web development with
-                JavaScript, TypeScript, and for frontend frameworks like Svelte, Vue, Angular and React. I also write
-                backend APIs & scripts, work with databases, and my favourite platform is NodeJS.
-            </h2>
-            <h1>Languages and Tools</h1>
-            <p class="languages-and-tools">
+            <h1 class="heading">About Me</h1>
+            <div class="about">
+                <h2>
+                    Hi, I'm Satyam. I am a 20 y/o self-taught fullstack web developer based in India with 6 years of
+                    experience. I make blazing fast
+                    and performant web apps, I work in frontend web development with
+                    JavaScript, TypeScript, and for frontend frameworks like Svelte, Vue, Angular and React. I also
+                    write
+                    backend APIs & scripts, work with databases, and my favourite platform is NodeJS.
+                </h2>
+            </div>
+            <h1 class="heading">Languages and Tools</h1>
+            <div class="languages-and-tools">
                 <img height="25" title="HTML" alt="HTML" src="./Languages_and_Tools/html.png">
                 <img height="25" title="CSS" alt="CSS" src="./Languages_and_Tools/css.png">
                 <img height="25" title="JavaScript" alt="JavaScript" src="./Languages_and_Tools/javascript.png">
@@ -218,26 +248,27 @@
                 <img height="25" title="Angular" alt="Angular" src="./Languages_and_Tools/angular.png">
                 <img height="25" title="TypeScript" alt="TypeScript" src="./Languages_and_Tools/typescript.png">
                 <img height="25" title="Python" alt="Python" src="./Languages_and_Tools/python.png">
-            </p>
-            <h1>📈 My GitHub Stats</h1>
-            <p align="center">
-                <img width="450px" alt="GitHub Stats"
-                    src="https://github-readme-stats.vercel.app/api?username=SatyamV7&show_icons=true&theme=gotham">
-            </p>
-            <p align="center">
-                <img alt="Top Languages"
-                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=SatyamV7&layout=compact&langs_count=7&theme=gotham">
-            </p>
+            </div>
+            <h1 class="heading">📈 My GitHub Stats</h1>
+            <div class="stats">
+                <p align="center">
+                    <img width="450px" alt="GitHub Stats"
+                        src="https://github-readme-stats.vercel.app/api?username=SatyamV7&show_icons=true&theme=gotham">
+                </p>
+                <p align="center">
+                    <img alt="Top Languages"
+                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=SatyamV7&layout=compact&langs_count=7&theme=gotham">
+                </p>
+            </div>
 
-            <h1 align="center">My Contact</h1>
-            <div class="social" align="center">
+            <h1 class="heading">My Contact</h1>
+            <div class="social">
                 <a href="tel:+7205452952"><img src="./Social/phone.svg" alt="Phone Icon" title="My Phone Number"></a>
                 <a href="mailto:satyamverma8772020@gmail.com"><img src="./Social/mail.svg" alt="Email Icon"
                         title="My Email"></a>
                 <a href="https://github.com/SatyamV7"><img src="./Social/github.svg" alt="GitHub Icon"
                         title="My GitHub Account"></a>
             </div>
-            </p>
         </div>
     </header>
     <script>

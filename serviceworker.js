@@ -32,6 +32,8 @@ const PRECACHE_URLS = [
   '/Sign_in/index.html',
   '/Sign_in/avtar.png',
   '/Fallback/fallback.html',
+  'https://fonts.googleapis.com/css2?family=Nunito&display=swap',
+  'https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3jw.woff2',
 ];
 
 // The install handler takes care of precaching the resources we always need.
