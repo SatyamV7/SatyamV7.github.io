@@ -71,7 +71,7 @@
             width: 100%;
         }
 
-        header {
+        .root {
             height: 100vh;
             width: 100%;
             background: transparent;
@@ -81,7 +81,7 @@
             position: relative;
         }
 
-        header .navbar {
+        .root .navbar {
             margin: auto;
             width: 100%;
             padding: 35px 50px;
@@ -131,23 +131,23 @@
             transform: scale(0.97);
         }
 
-        header .text-content {
+        .root .content {
             width: 40%;
             margin: 100px 0 0 50px;
         }
 
-        .text-content h2 {
+        .content h2 {
             font-size: 27px;
             font-weight: 600;
         }
 
-        .text-content p {
+        .content p {
             font-size: 30px;
             margin-top: 350px;
         }
 
         @media (max-width:850px) {
-            header .navbar {
+            .root .navbar {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -158,24 +158,24 @@
                 margin: 10px 0 20px 0;
             }
 
-            header .text-content {
+            .root .content {
                 margin: 30px 0 0 20px;
                 width: 70%;
             }
 
-            header .text-content h2 {
+            .root .content h2 {
                 font-size: 20px;
             }
         }
 
         @media (max-width:410px) {
-            header {
+            .root {
                 height: 100vh;
                 width: 100%;
                 border-radius: 0px;
             }
 
-            header .navbar {
+            .root .navbar {
                 padding: 15px 10px;
             }
         }
@@ -183,7 +183,7 @@
 </head>
 
 <body>
-    <header>
+    <div class="root">
         <nav class="navbar">
             <div class="logo"><a href="/"><img src="./icons/favicon.ico" width="50" height="50" alt="logo"></a>
             </div>
@@ -198,7 +198,7 @@
                 <input type="button" value="Login" onclick="window.location.href = './Sign_in/';">
             </div>
         </nav>
-        <div class="text-content">
+        <div class="content">
             <p>
             <h1>Hi, I'm Satyam</h1>
             <font size="4">
@@ -209,7 +209,7 @@
             </font>
             </p>
         </div>
-    </header>
+    </div>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function () {
