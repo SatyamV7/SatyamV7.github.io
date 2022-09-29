@@ -11,23 +11,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" alt="">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#FFFFFF">
-    <meta name="description"
-        content="This Webste in Created By Satyam Verma. You can See The Source Code on Github. I also Use this Website as my Homepage. I made it With HTML, CSS & JavaScript">
+    <meta name="description" content="This Webste in Created By Satyam Verma. You can See The Source Code on Github. I also Use this Website as my Homepage. I made it With HTML, CSS & JavaScript">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Nunito;
         }
-
+        
         html {
             width: 100%;
             height: 100%;
         }
-
+        
         body {
             /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
             /*background: linear-gradient(-45deg, rgb(69, 195, 255), rgb(0, 136, 204), rgb(127, 196, 0), rgb(255, 200, 108), rgb(255, 178, 30), rgb(255, 77, 77), rgb(100, 71, 182));*/
@@ -41,26 +39,24 @@
             width: 100%;
             height: 100%;
         }
-
+        
         @keyframes gradient {
             0% {
                 background-position: 0% 50%;
             }
-
             50% {
                 background-position: 100% 50%;
             }
-
             100% {
                 background-position: 0% 50%;
             }
         }
-
-        ::selection {
+        
+         ::selection {
             color: none;
             background: none;
         }
-
+        
         body::before,
         body::after {
             content: '';
@@ -70,7 +66,7 @@
             height: 100%;
             width: 100%;
         }
-
+        
         .root {
             height: 100vh;
             width: 100%;
@@ -80,7 +76,7 @@
             margin: auto;
             position: relative;
         }
-
+        
         .root .navbar {
             margin: auto;
             width: 100%;
@@ -90,17 +86,17 @@
             justify-content: space-between;
             align-items: center;
         }
-
+        
         .navbar .menu {
             display: flex;
             flex-wrap: wrap;
         }
-
+        
         .navbar .menu li {
             list-style: none;
             margin: 0 6px;
         }
-
+        
         .navbar .menu a {
             color: rgb(255, 255, 255);
             text-decoration: none;
@@ -108,11 +104,10 @@
             font-weight: 500;
             transition: all 0.3s ease;
         }
-
         /*.navbar .menu a:hover {
             color: #f2f2f2;
         }*/
-
+        
         .navbar .buttons input {
             outline: none;
             color: #f2f2f2;
@@ -126,44 +121,44 @@
             transition: all 0.3s ease;
             background: linear-gradient(-45deg, rgb(255, 77, 77), rgb(100, 71, 182));
         }
-
+        
         .navbar .buttons input:hover {
             transform: scale(0.97);
             background: linear-gradient(-45deg, rgb(100, 71, 182), rgb(255, 77, 77));
         }
-
+        
         .root .content {
             width: 100%;
             color: #FFFFFF;
             margin-top: 145px;
         }
-
+        
         .about {
             margin-left: 40px;
             margin-right: 40px;
         }
-
+        
         .social {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 25px;
         }
-
+        
         .languages-and-tools {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
         }
-
+        
         .about,
         .languages-and-tools,
         .stats,
         .social {
             margin-bottom: 13px;
         }
-
+        
         @media (max-width:850px) {
             .root .navbar {
                 flex-direction: column;
@@ -171,46 +166,43 @@
                 justify-content: center;
                 padding: 15px 5px;
             }
-
             .navbar .menu {
                 margin: 10px 0 20px 0;
             }
-
             .root .content {
                 margin: 30px 0 0 20px;
                 width: 70%;
             }
         }
-
+        
         @media (max-width:410px) {
             .root {
                 height: 100vh;
                 width: 100%;
                 border-radius: 0px;
             }
-
             .root .navbar {
                 padding: 15px 10px;
             }
         }
-
         /* width */
-        ::-webkit-scrollbar {
+        
+         ::-webkit-scrollbar {
             width: 0px;
         }
-
         /* Track */
-        ::-webkit-scrollbar-track {
+        
+         ::-webkit-scrollbar-track {
             background: #f0f0f0;
         }
-
         /* Handle */
-        ::-webkit-scrollbar-thumb {
+        
+         ::-webkit-scrollbar-thumb {
             background: rgb(185, 185, 185);
         }
-
         /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
+        
+         ::-webkit-scrollbar-thumb:hover {
             background: rgb(175, 175, 175);
         }
     </style>
@@ -219,8 +211,8 @@
 <body>
     <div class="root">
         <nav class="navbar">
-            <div class="logo"><a href="/"><img src="../icons/favicon.ico" width="50" alt="" height="50" alt=""
-                        alt="logo"></a>
+            <div class="logo">
+                <a href="/"><img src="../icons/favicon.ico" width="50" alt="" height="50" alt="" alt="logo"></a>
             </div>
             <ul class="menu">
                 <li><a href="/">Home</a></li>
@@ -230,19 +222,15 @@
                 <li><a href=".">About</a></li>
             </ul>
             <div class="buttons">
-                <input type="button" value="Login" onclick="window.location.href = '../Sign_in/';">
+                <input type="button" value="Sign In" onclick="window.location.href = '../Sign_in/';">
             </div>
         </nav>
         <div class="content" align="center">
             <h1 class="heading">About Me</h1>
             <div class="about">
                 <h2>
-                    Hi, I'm Satyam. I am a 13 y/o self-taught fullstack web developer based in India with 3 years of
-                    experience. I make blazing fast
-                    and performant web apps, I work in frontend web development with
-                    JavaScript, TypeScript, and for frontend frameworks like Svelte, Vue, Angular and React. I also
-                    write
-                    backend APIs & scripts, work with databases, and my favourite platform is NodeJS.
+                    Hi, I'm Satyam. I am a 13 y/o self-taught fullstack web developer based in India with 3 years of experience. I make blazing fast and performant web apps, I work in frontend web development with JavaScript, TypeScript, and for frontend frameworks like
+                    Svelte, Vue, Angular and React. I also write backend APIs & scripts, work with databases, and my favourite platform is NodeJS.
                 </h2>
             </div>
             <h1 class="heading">Languages and Tools</h1>
@@ -262,32 +250,28 @@
             <h1 class="heading">My GitHub Stats</h1>
             <div class="stats">
                 <p align="center">
-                    <img width="450px" alt="GitHub Stats"
-                        src="https://github-readme-stats.vercel.app/api?username=SatyamV7&show_icons=true&theme=gotham">
+                    <img width="450px" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=SatyamV7&show_icons=true&theme=gotham">
                 </p>
                 <p align="center">
-                    <img alt="Top Languages" height="178px"
-                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=SatyamV7&layout=compact&langs_count=7&theme=gotham">
+                    <img alt="Top Languages" height="178px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SatyamV7&layout=compact&langs_count=7&theme=gotham">
                 </p>
             </div>
 
             <h1 class="heading">My Contact</h1>
             <div class="social">
                 <a href="tel:+7205452952"><img src="./Social/phone.svg" alt="Phone Icon" title="My Phone Number"></a>
-                <a href="mailto:satyamverma8772020@gmail.com"><img src="./Social/mail.svg" alt="Email Icon"
-                        title="My Email"></a>
-                <a href="https://github.com/SatyamV7"><img src="./Social/github.svg" alt="GitHub Icon"
-                        title="My GitHub Account"></a>
+                <a href="mailto:satyamverma8772020@gmail.com"><img src="./Social/mail.svg" alt="Email Icon" title="My Email"></a>
+                <a href="https://github.com/SatyamV7"><img src="./Social/github.svg" alt="GitHub Icon" title="My GitHub Account"></a>
             </div>
         </div>
     </div>
     <script>
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('../serviceworker.js').then(function (registration) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../serviceworker.js').then(function(registration) {
                     // Registration was successful
                     console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, function (err) {
+                }, function(err) {
                     // registration failed :(
                     console.log('ServiceWorker registration failed: ', err);
                 });
