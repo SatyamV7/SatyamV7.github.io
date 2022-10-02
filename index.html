@@ -191,7 +191,7 @@
                 <li><a href="./About_Me/">About</a></li>
             </ul>
             <div class="buttons">
-                <input type="button" value="Login" onclick="window.location.href = './Sign_in/';">
+                <input type="button" value="Sign In" onclick="window.location.href = './Sign_in/';">
             </div>
         </nav>
         <div class="content">
@@ -204,6 +204,11 @@
         </div>
     </div>
     <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/serviceworker.js");
+        }
+    </script>
+    <!--<script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
                 navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
@@ -215,7 +220,7 @@
                 });
             });
         }
-    </script>
+    </script>-->
 </body>
 
 </html>
